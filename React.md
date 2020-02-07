@@ -43,3 +43,6 @@
   > 객체로 문서 구조를 표현하는 방법으로 XML이나 HTML로 작성
   >
   > 동적 UI에 최적화되어있지않다.
+
+- yarn creact react-app <프로젝트 이름>
+- npm init react-app <프로젝트 이름>
