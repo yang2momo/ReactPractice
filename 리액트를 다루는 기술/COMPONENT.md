@@ -39,3 +39,47 @@
 - 태그 사이의 내용을 보여주는 **children**
 
   ><MyComponent>chilren값</MyComponent>
+
+- #### 비구조화 할당 문법(ES6)
+
+  >(destructuring assignment)
+  >
+  >객체에서 값을 추출하는 문법
+  >
+  >const { day, children } = props;
+  >
+  >const MyComponent = ({ day, children }) =>{ ... }
+
+- 함수형 컴포넌트에서 props를 사용할 떄 파라미터 부분에서 비구조화 할당 문법을 사용한다.
+
+- #### propTypes
+
+  > 컴포넌트의 필수 props를 지정하거나 props의 타입(type)을 지정할 때 사용
+  >
+  > import PropTypes from 'prop-types';
+  >
+  > 컴포넌트명.PropTypes = {
+  >
+  > ​    day: PropTypes.string
+  >
+  > };
+
+- #### isRequired
+
+  > propsTypes를 지정하지 않았을 때 경고 메시지를 띄워 주는 작업
+
+- 클래스형 컴포넌트에서 props를 사용할 떄는 render 함수에서 this.props를 조회하면 됨
+
+- static defaultProps = {
+
+  ​        day: '게임'
+
+  ​    };
+
+  static propTypes = {
+
+  ​        day: PropTypes.string
+
+  ​    };
+
+- 
