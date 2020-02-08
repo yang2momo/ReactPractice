@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
-import MyComponentCl from './MyComponent';
+import Say from './Say';
 
 const App = () => {
-  return <MyComponentCl day='공부'>정말</MyComponentCl>;
+  return <Say />;
+
+
 }
 
 export default App;
