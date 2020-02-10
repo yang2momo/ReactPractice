@@ -1,11 +1,17 @@
-import React from 'react';
-import './App.css';
-import EventPractice from './EventPractice';
+import React, { Component } from 'react';
+import ValidationSample from './ValidationSample';
 
-const App = () => {
-  return <EventPractice />;
-
-
+class App extends Component {
+  render() {
+    return (
+      <ValidationSample />
+    );
+  }
 }
+// const App = () => {
+//   return <ValidationSample />;
+
+
+// }
 
 export default App;
