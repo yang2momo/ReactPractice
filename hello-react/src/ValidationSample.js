@@ -6,7 +6,7 @@ class ValidationSample extends Component {
         password: '',
         clicked: false,
         validated: false
-    }
+    }// 기본 state 값 설정
 
     handleChange = (e) => {
         this.setState({
@@ -23,6 +23,12 @@ class ValidationSample extends Component {
         this.input.focus(); // onClick 이벤트가 발생할 때  input에 포커스를 주도록함
     }
 
+    handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            this.handleButtonClick();
+        }
+    }
+
     render() {
         return (
             <div>
@@ -31,9 +37,12 @@ class ValidationSample extends Component {
                     type="password"
                     value={this.state.password}
                     onChange={this.handleChange}
+                    onKeyPress={this.handleKeyPress}
                     className={this.state.clicked ? (this.state.validated ? 'success' : 'failure') : ''}
                 />
-                <button onClick={this.handleButtonClick}>인증하기</button>
+                <button
+                    onClick={this.handleButtonClick}
+                >인증하기</button>
             </div>
         );
     }
