@@ -1,3 +1,10 @@
 body{
-    background-color: goldenrod;
+    background-color: greenyellow;
+   
+}
+h1 {
+    color: indianred;
+}
+.clicked {
+    color: aqua;
 }

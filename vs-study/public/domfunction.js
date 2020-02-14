@@ -17,3 +17,17 @@ title.addEventListener("click", handleClick);
 // // 폼을 만들거나 링크를 클릭할때 유용함.
 // window.addEventListener("resize", handleResize);
 
+if (10 === 10) {
+    console.log("노력");
+}
+else {
+    console.log("끈기");
+}
+
+const age = prompt("몇살?");
+
+if (age >= 50 && age <= 21) {
+    console.log("you can drink");
+} else {
+    console.log("you cant")
+}
