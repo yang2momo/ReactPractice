@@ -8,12 +8,18 @@ const form = document.querySelector(".js-form"),
 const USER_LS = "currentUser",
     SHOWING_CN = "showing";
 
+function saveName(text) {
+    localStorage.setItem(USER_LS, text);
+}
+
 
 function handleSubmit(event) {
     // event의 기본 동작(기본값)을 막고싶을때.
     event.preventDefault();
     const currentValue = input.value;
-    console.log(currentValue);
+    paintGreeting(currentValue);
+    saveName(currentValue);
+    // console.log(currentValue);
 }
 function askForName() {
     // currentUser가 없으며 user의 이름을 요청할꺼임
@@ -23,6 +29,7 @@ function askForName() {
 }
 // loadName의 역할은 localStorage에 있는 값을 가져오는역할
 function paintGreeting(text) {
+    // form을 지우고 나에게 greeting을 보여주고 텍스트를 넣을꺼임 (이및 설명)
     // 만약 텍스트를 색칠할꺼라면. 폼을 숨겨야함.
     form.classList.remove(SHOWING_CN)
     greeting.classList.add(SHOWING_CN);
