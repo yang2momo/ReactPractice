@@ -105,3 +105,47 @@
 - #### .parseInt()
 
   > string을 숫자로바꿈
+
+- 자바스크립트의 random numbers
+
+  > 자바스크립트안에는 math(수학)이란 모듈이 있다.
+  >
+  > ##### Math.random() * 5;
+  >
+  > > 1~5사이에있는걸 볼 수 있다.
+  >
+  > ##### Math.floor(3.9)
+  >
+  > > 3.2,3.1,3.9 다 나머지는 버리고 3이됨
+  >
+  > ceiling(천장) 올림
+  >
+  > floor(바닥) 내림
+  >
+  > ##### Math.ceil(3.9)
+  >
+  > > floor랑 반대로 ceiling은 위로 올리는거임 3.1, 3.2 , 3.9 전부 4가됨
+  >
+  > ##### Math.floor(Math.random()*5);
+  >
+  > > 0~부터 4까지 랜덤이됨.
+
+- 유저의 Location 좌표 정부를 읽어서 그 정보를 저장하고 만약 이미 저장값이 있다면 아무것도 안하면됨
+
+- #### geolocation()
+
+  > object 
+
+- #### getCurrentPosition()
+
+  > 위치정보를 읽는 방식
+
+- 객체에 변수의 이름과 객체의 key의 이름을 같게 저장할 때는
+
+  >latitude: latitude,
+  >
+  >longitude: longitude
+  >
+  >로 저장해도 되지만,
+  >
+  >latitude, longitude 이렇게 저장해도된다.
