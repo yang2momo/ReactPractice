@@ -149,3 +149,7 @@
   >로 저장해도 되지만,
   >
   >latitude, longitude 이렇게 저장해도된다.
+
+- #### API(Application Programming Interface)
+
+  > 다른 서버로부터 손쉽게 데이터를 가져올 수 있는 수단.
